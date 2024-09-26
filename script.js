@@ -44,10 +44,8 @@ class Biblioteca {
     }
 }
 
-// Inicializando a biblioteca
 const biblioteca = new Biblioteca();
 
-// Adicionando o evento de submit ao formulário
 document.getElementById('bookForm').addEventListener('submit', function(event) {
     event.preventDefault();
 
@@ -59,6 +57,6 @@ document.getElementById('bookForm').addEventListener('submit', function(event) {
     const livro = new Livro(titulo, autor, ano, genero);
     biblioteca.adicionarLivro(livro);
 
-    // Limpar os campos do formulário
+
     this.reset();
 });
